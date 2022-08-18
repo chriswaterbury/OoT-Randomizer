@@ -2175,8 +2175,7 @@ setting_infos = [
             True : {
                 'sections' : ['various_section', 'shuffle_section', 'shuffle_dungeon_section'],
                 'settings': ['starting_age', 'shuffle_interior_entrances', 'shuffle_grotto_entrances', 'shuffle_dungeon_entrances',
-                             'shuffle_bosses', 'shuffle_overworld_entrances', 'owl_drops', 'warp_songs', 'spawn_positions', 'mix_entrance_pools', 'decouple_entrances',
-                             'triforce_hunt', 'triforce_count_per_world', 'triforce_goal_per_world', 'bombchus_in_logic', 'one_item_per_dungeon'],
+                             'shuffle_bosses', 'shuffle_overworld_entrances', 'owl_drops', 'warp_songs', 'spawn_positions', 'mix_entrance_pools', 'decouple_entrances', 'bombchus_in_logic', 'one_item_per_dungeon'],
             }
         },
         shared         = True,
@@ -2464,7 +2463,7 @@ setting_infos = [
         ''',
         shared         = True,
         gui_params     = {
-            'randomize_key': 'randomize_settings',
+            # 'randomize_key': 'randomize_settings',
         },
         disable        = {
             True  : {'settings' : ['shuffle_ganon_bosskey', 'ganon_bosskey_stones', 'ganon_bosskey_medallions', 'ganon_bosskey_rewards', 'ganon_bosskey_tokens', 'ganon_bosskey_hearts']},
@@ -3666,6 +3665,7 @@ setting_infos = [
             'all':       'All dungeons',
             'random':    'Random dungeons'
         },
+        default         = 'all',
         gui_tooltip     = '''\
             Selected dungeons will have all of their keys found 
             at once in a ring rather than individually. 
@@ -3704,7 +3704,17 @@ setting_infos = [
             'Gerudo Training Ground': "Gerudo Training Ground",
             'Ganons Castle':          "Ganon's Castle"
         },
-        default         = [],
+        default         = [
+            'Thieves Hideout',
+            'Forest Temple',
+            'Fire Temple',
+            'Water Temple',
+            'Shadow Temple',
+            'Spirit Temple',
+            'Bottom of the Well',
+            'Gerudo Training Ground',
+            'Ganons Castle'
+        ],
         gui_params     = {
             "hide_when_disabled": True,
         },
