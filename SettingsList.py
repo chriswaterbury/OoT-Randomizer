@@ -2693,7 +2693,7 @@ setting_infos = [
     Combobox(
         name           = 'dungeon_shortcuts_choice',
         gui_text       = 'Dungeon Boss Shortcuts Mode',
-        default        = 'off',
+        default        = 'random',
         choices        = {
             'off':       'Off',
             'choice':    'Specific Dungeons',
