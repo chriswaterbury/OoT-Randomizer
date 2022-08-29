@@ -3658,14 +3658,13 @@ setting_infos = [
     Combobox(
         name           = 'key_rings_choice',
         gui_text       = 'Key Rings Mode',
-        default        = 'off',
+        default        = 'all',
         choices        = {
             'off':       'Off',
             'choice':    'Choose dungeons',
             'all':       'All dungeons',
             'random':    'Random dungeons'
         },
-        default         = 'all',
         gui_tooltip     = '''\
             Selected dungeons will have all of their keys found 
             at once in a ring rather than individually. 
