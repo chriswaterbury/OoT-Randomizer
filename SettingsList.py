@@ -3200,8 +3200,8 @@ setting_infos = [
         gui_params     = {
             'randomize_key': 'randomize_settings',
             'distribution': [
-                ('off', 2),
-                ('simple', 1),
+                # ('off', 2),
+                # ('simple', 1),
                 ('all', 1),
             ],
         },
@@ -3229,6 +3229,9 @@ setting_infos = [
         shared         = True,
         gui_params     = {
             'randomize_key': 'randomize_settings',
+            'distribution': [
+                ('full', 1),
+            ]
         },
     ),
     Checkbutton(
@@ -3251,6 +3254,9 @@ setting_infos = [
         shared         = True,
         gui_params     = {
             'randomize_key': 'randomize_settings',
+            'distribution': [
+                (False, 1)
+            ]
         },
     ),
     Combobox(
@@ -3280,9 +3286,7 @@ setting_infos = [
         gui_params     = {
             'randomize_key': 'randomize_settings',
             'distribution':  [
-                ([], 2),
-                (['Interior', 'GrottoGrave', 'Dungeon'], 1),
-                (['Interior', 'GrottoGrave', 'Dungeon', 'Overworld'], 1),
+                (['GrottoGrave', 'Dungeon'], 1),
             ],
         },
     ),
