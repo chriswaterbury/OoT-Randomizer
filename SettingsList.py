@@ -2218,9 +2218,9 @@ setting_infos = [
         gui_params     = {
             'randomize_key': 'randomize_settings',
             'distribution': [
-                ('open', 1),
+                ('open', 2),
                 ('closed_deku', 1),
-                ('closed', 1),
+                ('closed', 2),
             ],
         },
     ),
@@ -3157,8 +3157,6 @@ setting_infos = [
             'randomize_key': 'randomize_settings',
             'distribution':  [
                 ('off', 2),
-                ('simple', 1),
-                ('all', 1),
             ],
         },
     ),
@@ -3173,6 +3171,9 @@ setting_infos = [
         shared         = True,
         gui_params     = {
             'randomize_key': 'randomize_settings',
+            'distribution':  [
+                (True, 1),
+            ],
         },
     ),
     Combobox(
@@ -3286,6 +3287,7 @@ setting_infos = [
         gui_params     = {
             'randomize_key': 'randomize_settings',
             'distribution':  [
+                (['Dungeon'], 1),
                 (['GrottoGrave', 'Dungeon'], 1),
             ],
         },
@@ -3384,7 +3386,7 @@ setting_infos = [
             'randomize_key': 'randomize_settings',
             'distribution':  [
                 ('off', 1),
-                ('low', 1),
+                ('low', 2),
             ],
         },
     ),
@@ -3433,7 +3435,7 @@ setting_infos = [
         gui_params     = {
             'randomize_key': 'randomize_settings',
             'distribution':  [
-                ('off',    6),
+                ('off',    1),
                 ('0',      1),
                 ('1',      1),
                 ('2',      1),
@@ -3509,6 +3511,12 @@ setting_infos = [
         shared         = True,
         gui_params     = {
             'randomize_key': 'randomize_settings',
+            'distribution':  [
+                ('off',    3),
+                ('dungeons',      4),
+                ('overworld',      4),
+                ('all',      1),
+            ],
         },
     ),
     Combobox(
